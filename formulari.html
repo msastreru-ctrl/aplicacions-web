@@ -37,3 +37,68 @@
             <button type="submit">Cerca</button>
         </p>
     </form>
+
+
+
+     <h3>Inscripció</h3>
+    <form action="inscripcio.php" method="post">
+        <p>
+            <label for="nom">Nom i llinatges</label>
+            <input type="text" name="nom" id="nom" required maxlength="80">
+        </p>
+        
+        <p>
+            <label for="correu">Correu</label>
+            <input type="email" name="correu" id="correu" required>
+        </p>
+        
+        <p>
+            <label for="telefon">Telèfon</label>
+            <input type="tel" name="telefon" id="telefon" pattern="[0-9]{9}">
+        </p>
+        
+        <p>
+            <label for="naixement">Data de naixement</label>
+            <input type="date" name="naixement" id="naixement" required min="1956-01-01" max="2010-12-31">
+        </p>
+        
+        <p>
+            Distància:
+            <input type="radio" name="distancia" id="d5" value="5k" required>
+            <label for="d5">5 km</label>
+            
+            <input type="radio" name="distancia" id="d10" value="10k">
+            <label for="d10">10 km</label>
+            
+            <input type="radio" name="distancia" id="d21" value="21k">
+            <label for="d21">Mitja marató</label>
+        </p>
+        
+        <p>
+            <label for="talla">Talla de samarreta</label>
+            <select name="talla" id="talla">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+        </p>
+        
+        <p>
+            <input type="checkbox" name="reglament" id="reglament" required>
+            <label for="reglament">Accepto el reglament</label>
+        </p>
+        
+        <p>
+            <input type="checkbox" name="butlleti" id="butlleti">
+            <label for="butlleti">Vull rebre el butlletí</label>
+        </p>
+        
+        <p>
+            <label for="comentaris">Comentaris</label><br>
+            <textarea name="comentaris" id="comentaris" maxlength="300"></textarea>
+        </p>
+        
+        <button type="submit">Inscriu-me</button>
+    </form>
+</main>
