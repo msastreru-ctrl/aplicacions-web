@@ -1,32 +1,83 @@
-/* 1. La caixa, per a tot */
 * { box-sizing: border-box; }
-/* 2. Els colors, en un sol lloc */
+
 :root {
---principal: #1750a1;
---tinta: #1d1c1a;
---fons: #fbfaf7;
+  --principal: #1750a1;
+  --tinta: #1d1c1a;
+  --fons: #fbfaf7;
 }
-/* 3. El general */
+
 body {
-font-family: Arial, Helvetica, sans-serif;
-line-height: 1.5;
-color: var(--tinta);
-background-color: var(--fons);
-max-width: 50rem;
-margin: 2rem auto;
-padding: 0 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: var(--tinta);
+  background-color: var(--fons);
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
-/* 4. Les zones */
+
 nav a {
-color: var(--principal);
-text-decoration: none;
-margin-right: 1rem;
+  color: var(--principal);
+  text-decoration: none;
+  margin-right: 1rem;
 }
+
 table {
-border-collapse: collapse;
+  border-collapse: collapse;
 }
+
 th, td {
-border: 1px solid var(--tinta);
-padding: 0.5rem;
-text-align: center;
+  border: 1px solid var(--tinta);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+:root {
+  --daurat: #c5a059; 
+  --aw: #e6f0fa;   
+  --si: #d1e3f8;   
+  --sx: #bdbeeb;   
+  --sox: #a9cef4;  
+  --op: #cbe3f7;   
+  --pi: #b3d1ff;   
+  --sost: #d4e6f1; 
+  --ipo: #eaf2f8;  
+}
+
+main {
+  font-family: Lato, Arial, Helvetica, sans-serif; 
+  font-size: 1.6rem;                               
+}
+
+main table {
+  border-collapse: separate !important; 
+  border-spacing: 4px;       
+  margin-bottom: 2.4rem;
+}
+
+main th {
+  border: 1px solid var(--daurat);
+  padding: 0.8rem; 
+  color: var(--daurat);      
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+main td {
+  padding: 0.8rem; 
+}
+
+.aw { background-color: var(--aw); }
+.si { background-color: var(--si); }
+.sx { background-color: var(--sx); }
+.sox { background-color: var(--sox); }
+.op { background-color: var(--op); }
+.pi { background-color: var(--pi); }
+.sost { background-color: var(--sost); }
+.ipo { background-color: var(--ipo); }
+
+.mod {
+  border: 1.5px solid var(--daurat) !important; 
+  border-radius: 6px;                
+  color: #1a2530; 
 }
