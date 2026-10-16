@@ -1,19 +1,29 @@
 * { box-sizing: border-box; }
 
 :root {
-  --principal: #1750a1;
-  --tinta: #1d1c1a;
-  --fons: #fbfaf7;
+  --principal: #2b6cb0;
+  --tinta: #2d3748;
+  --fons: #f7fafc;
+  --daurat: #b7791f;      
+  --dilluns: #fed7d7;     
+  --dimarts: #feebc8;     
+  --dimecres: #fef08a;    
+  --dijous: #c6f6d5;      
+  --divendres: #e2e8f0;   
+  --optativa: #e9d8fd;    
+  --patio: #bee3f8;       
+  --altre: #fed7e2;       
+  --ipo: #e2fbf5;         
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
+  line-height: 1.4;       
   color: var(--tinta);
   background-color: var(--fons);
-  max-width: 50rem;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  max-width: 60rem;       
+  margin: 1.5rem auto;    
+  padding: 0 0.5rem;
 }
 
 nav a {
@@ -28,56 +38,45 @@ table {
 
 th, td {
   border: 1px solid var(--tinta);
-  padding: 0.5rem;
+  padding: 0.4rem;        
   text-align: center;
-}
-
-:root {
-  --daurat: #c5a059; 
-  --aw: #e6f0fa;   
-  --si: #d1e3f8;   
-  --sx: #bdbeeb;   
-  --sox: #a9cef4;  
-  --op: #cbe3f7;   
-  --pi: #b3d1ff;   
-  --sost: #d4e6f1; 
-  --ipo: #eaf2f8;  
 }
 
 main {
   font-family: Lato, Arial, Helvetica, sans-serif; 
-  font-size: 1.6rem;                               
+  font-size: 1.1rem;      
 }
 
 main table {
   border-collapse: separate !important; 
-  border-spacing: 4px;       
-  margin-bottom: 2.4rem;
+  border-spacing: 2px;    
+  margin-bottom: 1.5rem;
+  width: 100%;            
 }
 
 main th {
   border: 1px solid var(--daurat);
-  padding: 0.8rem; 
+  padding: 0.5rem 0.3rem; 
   color: var(--daurat);      
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.2rem;      
 }
 
 main td {
-  padding: 0.8rem; 
+  padding: 0.5rem 0.3rem; 
 }
 
-.aw { background-color: var(--aw); }
-.si { background-color: var(--si); }
-.sx { background-color: var(--sx); }
-.sox { background-color: var(--sox); }
-.op { background-color: var(--op); }
-.pi { background-color: var(--pi); }
-.sost { background-color: var(--sost); }
+.aw { background-color: var(--dilluns); }
+.si { background-color: var(--dimarts); }
+.sx { background-color: var(--dimecres); }
+.sox { background-color: var(--dijous); }
+.op { background-color: var(--optativa); }
+.pi { background-color: var(--patio); }
+.sost { background-color: var(--divendres); }
 .ipo { background-color: var(--ipo); }
 
 .mod {
   border: 1.5px solid var(--daurat) !important; 
-  border-radius: 6px;                
+  border-radius: 4px;     
   color: #1a2530; 
 }
